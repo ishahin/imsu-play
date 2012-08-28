@@ -1,5 +1,5 @@
 imsu-play
 =========
 
-Image Sharing Service Inspired by Instagram
-Techstack / Play framewrok & Java
+- Image Sharing Service Inspired by Instagram
+- Techstack / Play framework & Java
