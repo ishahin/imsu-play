@@ -1,6 +1,8 @@
 logs
 project/project
 project/target
+conf/secured
+conf/aws-credentials.properties
 target
 tmp
 .history

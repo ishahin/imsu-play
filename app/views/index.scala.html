@@ -1,7 +1,18 @@
-@(message: String)
+@(photos : List[String])
 
-@main("Welcome to Play 2.0") {
-    
-    @play20.welcome(message, style = "Java")
-    
+@import helper._
+
+@main("IMSU / Yet another image sharing service") {
+
+    @form(action = routes.Application.uploadPhoto, 'enctype -> "multipart/form-data") {
+        <input type="file" name="picture">
+        <p>
+            <input type="submit">
+        </p>
+    }
+
+    @for(photo <- photos){
+        <img src="@{routes.Application.image(photo)}" width="100" height="100">
+    }
+
 }
